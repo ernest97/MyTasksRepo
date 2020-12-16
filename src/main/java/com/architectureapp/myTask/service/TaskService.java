@@ -57,19 +57,13 @@ public class TaskService {
     	taskRepository.save(task);
     }
     
-	public void updateTask(int id, String name, String description, String state) {
+	public void updateTask(int id, TaskEntity task) {
 		TaskEntity oldTask = taskRepository.findById(id).get();
-		oldTask.setName(name);
-		oldTask.setDescription(description);
-		oldTask.setState(state);
+		oldTask.setName(task.getName());
+		oldTask.setDescription(task.getDescription());
+		oldTask.setState(task.getState());
 		taskRepository.save(oldTask);
 	}
-
-//    public void updateEstado (int id, String estado) {
-//        TaskEntity oldTask = taskRepository.findById(id).get();
-//        oldTask.setState(estado);
-//        taskRepository.save(oldTask);
-//    }
 
     public void deleteById(int userId) {
     	taskRepository.deleteById(userId);

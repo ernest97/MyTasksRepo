@@ -27,25 +27,25 @@ public class TaskTest {
 	@Mock
 	TaskController controllerMock;
 	
-	@Test
-	public void getListTest()
-	{
-	    List<TaskEntity> list = new ArrayList<TaskEntity>();
-	    TaskEntity task1 = new TaskEntity("TareaTest1", "TareaTest1 descripcion", "Pendiente");
-	    TaskEntity task2 = new TaskEntity("TareaTest1", "TareaTest1 descripcion", "Pendiente");
-	    TaskEntity task3 = new TaskEntity("TareaTest1", "TareaTest1 descripcion", "Pendiente");
-	     
-	    list.add(task1);
-	    list.add(task2);
-	    list.add(task3);
-	     
-	    when(controllerMock.listTask()).thenReturn(list);
-	     
-	    //test
-	    List<TaskEntity> taskList = taskService.list();
-	     
-	    assertEquals(3, taskList.size());
-	}
+//	@Test
+//	public void getListTest()
+//	{
+//	    List<TaskEntity> list = new ArrayList<TaskEntity>();
+//	    TaskEntity task1 = new TaskEntity("TareaTest1", "TareaTest1 descripcion", "Pendiente");
+//	    TaskEntity task2 = new TaskEntity("TareaTest1", "TareaTest1 descripcion", "Pendiente");
+//	    TaskEntity task3 = new TaskEntity("TareaTest1", "TareaTest1 descripcion", "Pendiente");
+//	     
+//	    list.add(task1);
+//	    list.add(task2);
+//	    list.add(task3);
+//	     
+//	    when(controllerMock.listTask()).thenReturn(list);
+//	     
+//	    //test
+//	    List<TaskEntity> taskList = taskService.list();
+//	     
+//	    assertEquals(3, taskList.size());
+//	}
 	
 //	@Test
 //	void testAdd() {
