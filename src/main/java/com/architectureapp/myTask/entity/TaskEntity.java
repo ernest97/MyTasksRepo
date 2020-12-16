@@ -35,7 +35,23 @@ public class TaskEntity {
 	    return id;
 	  }
 
-	  public String getName() {
+	  public String getDescription() {
+		return description;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getName() {
 	    return name;
 	  }
 
