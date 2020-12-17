@@ -16,7 +16,7 @@ import com.architectureapp.myTask.service.TaskService;
 @RestController
 public class TaskController {
 	
-	@Autowired 
+	@Autowired  
 	private TaskService taskService;
 	
 	@RequestMapping(value="/tasks",method=RequestMethod.GET, produces = "application/json")
