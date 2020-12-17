@@ -26,7 +26,7 @@ import com.architectureapp.myTask.service.TaskService;
 
 
 
-@WebMvcTest(ControllerTest.class)
+//@WebMvcTest(ControllerTest.class)
 class ControllerTest {
 	
 	

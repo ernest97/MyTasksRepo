@@ -17,15 +17,15 @@ import com.architectureapp.myTask.entity.TaskEntity;
 import com.architectureapp.myTask.service.TaskService;
 
 
-@ExtendWith(SpringExtension.class)
+//@ExtendWith(SpringExtension.class)
 public class TaskTest {
 	
 	
-	@InjectMocks
-	TaskService taskService;
-	
-	@Mock
-	TaskController controllerMock;
+//	@InjectMocks
+//	TaskService taskService;
+//	
+//	@Mock
+//	TaskController controllerMock;
 	
 //	@Test
 //	public void getListTest()
